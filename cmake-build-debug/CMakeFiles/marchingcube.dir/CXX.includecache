@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/lidan/CLionProjects/marchingcube/data/Point.h
+
+/Users/lidan/CLionProjects/marchingcube/data/data.cpp
+data.h
+/Users/lidan/CLionProjects/marchingcube/data/data.h
+limits
+-
+
+/Users/lidan/CLionProjects/marchingcube/data/data.h
+iostream
+-
+string
+-
+vector
+-
+fstream
+-
+algorithm
+-
+sstream
+-
+Point.h
+/Users/lidan/CLionProjects/marchingcube/data/Point.h
+
