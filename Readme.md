@@ -1,39 +1,41 @@
-#marching cube算法实现及opengl显示
-本项目中的第二部分，即为marching cube算法实现和显示，项目提供了marching cube的算法实现，和opengl+glut的显示和交互效果。
+# marching cube algorithm implementation and opengl display
+The second part of this project is the realization and display of the marching cube algorithm. The project provides the realization of the marching cube algorithm, and the display and interaction effects of opengl+glut.
 
-本项目使用的依赖库
+Dependent libraries used in this project
 
-> - OpenGL 
-> - GLUT 
+> - OpenGL
+> - GLUT
 
 ```
-本项目从一个vtk标准的structured point文件读入三维图像信息，使用marching cube算法进行实现，并予以交互显示。
+This project reads in 3D image information from a vtk standard structured point file, implements it using the marching cube algorithm, and displays it interactively.
 ```
 
-## 实现内容综述
+## Implementation content summary
 
-> - 读入存储三维图像信息的vtk的structured point文件 设置对应的数据结构
-> - marching cube算法（256版本，因为16版本已经证明不完善），输出mesh（point，triangle index，and normal）
-> - glut+opengl2/opengl4 进行渲染显示 输出成为obj
-> - 一些经典的已经在我实现的渲染器中实现过的算法 比如三角形法向量方向一致等等
+> - Read in the vtk structured point file that stores 3D image information and set the corresponding data structure
+> - marching cube algorithm (version 256, because version 16 has been proved to be incomplete), output mesh (point, triangle index, and normal)
+> - glut+opengl2/opengl4 for rendering and display output becomes obj
+> - Some classic algorithms that have been implemented in the renderer I implemented, such as the direction of the triangle normal vector, etc.
 
-## 实现的不足之处
+## Inadequacies of the implementation
 
-> - 暂时拿不到老师说的mrh图像数据集 没有对dicom数据库进行复现
+> - Temporarily unable to get the mrh image data set that the teacher said, did not reproduce the dicom database
 >
-> - 由于marching cube算法本身就可能出现holy 没有对hole进行检测，但我相信这是另一个封闭性检测算法的范畴了
+> - Due to the marching cube algorithm itself, the holy may not detect the hole, but I believe this is another category of closedness detection algorithm
 >
->   
+>
 
-## 注意
+## Notice
 
-note：本项目提供了opengl2和opengl4两个版本的render实现，分别对应gl和opengl4两个文件夹，但是笔者的mac电脑使用的是老版本的os系统，所以只测试了opengl2实现无误，opengl4实现待开学后在linux电脑上测试。
+Note: This project provides two versions of render implementations, opengl2 and opengl4, which correspond to two folders of gl and opengl4 respectively. However, the author’s mac computer uses an old version of the os system, so only the implementation of opengl2 is tested correctly, and the implementation of opengl4 is correct. Test it on a linux computer after school starts.
 
-## 最终效果
+## final effect
 
 ![figure2-1](./images/1.png)
 
 ![figure2-1](./images/2.png)
 
 ![figure2-1](./images/3.png)
-
+与此原文有关的更多信息要查看其他翻译信息，您必须输入相应原文
+发送反馈
+侧边栏
