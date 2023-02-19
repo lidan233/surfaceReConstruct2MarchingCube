@@ -36,6 +36,4 @@ Note: This project provides two versions of render implementations, opengl2 and 
 ![figure2-1](./images/2.png)
 
 ![figure2-1](./images/3.png)
-与此原文有关的更多信息要查看其他翻译信息，您必须输入相应原文
-发送反馈
-侧边栏
+
